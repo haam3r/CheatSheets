@@ -72,3 +72,14 @@ if you want to pull your submodules to latest commits intead of what the repo po
 For older, git 1.6.1 or above you can use something similar to (modified to suit):
 
 `git submodule foreach git pull origin master`
+
+
+## Second upstream remote
+
+For example adding a public github repo to a private fork in GitLab and you want to pull in upstream changes
+
+```bash
+git remote add upstream path://to/upstream
+Whenever you need to update:
+git pull -r upstream master
+```
