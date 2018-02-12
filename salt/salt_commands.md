@@ -25,6 +25,7 @@
 `salt '*' cmd.run "hostname -f; bash /etc/update-motd.d/90-updates-available; bash /etc/update-motd.d/98-reboot-required; df -h / /boot | tail -n 2 | awk '{print \$6 \" \" \$5}'"` - List hostname, updates, wether reboot is required and free disk space for all nodes
 
 `salt '*' cmd.run '/usr/lib/update-notifier/apt-check --human-readable'` - Number of updates available (motd ouput about updates)
+
 ----------
 
 ## salt-call
