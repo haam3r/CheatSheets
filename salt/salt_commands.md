@@ -26,6 +26,8 @@
 
 `salt '*' cmd.run '/usr/lib/update-notifier/apt-check --human-readable'` - Number of updates available (motd ouput about updates)
 
+`salt-call -l debug saltutil.runner cache.clear_git_lock arg="['git_pillar']" kwarg="{'typ': 'update'}"` - Run salt runners on a masterless minion
+
 ----------
 
 ## salt-call
