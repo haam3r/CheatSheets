@@ -14,6 +14,8 @@
 
 `salt-run manage.status` - View status of all minions
 
+`salt-run cache.grains 'minion.example.com' | grep -A 5 -e "ipv4"` - Get last known IP address of disconnected minion 
+
 ----------
 
 ## salt
