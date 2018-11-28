@@ -26,6 +26,20 @@ git branch -r
 ```
 Source: http://gitready.com/intermediate/2009/02/13/list-remote-branches.html
 
+* Checkout remote branch
+```bash
+git fetch
+git checkout test
+```
+Source: https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch
+
+* Create branch from another branch
+```bash
+git checkout -b myFeature dev
+```
+Source: https://stackoverflow.com/questions/4470523/create-a-branch-in-git-from-another-branch
+
+
 ## Configuration
 
 ### You can configure an individual repo to use a specific user / email address which overrides the global configuration. From the root of the repo, run
