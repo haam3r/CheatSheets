@@ -16,6 +16,15 @@
   ``` bash
   git diff HEAD [filename]
   ```
+  
+* Show branches
+```bash
+# Show all branches both local and remote
+git branch -a
+# Show remote branches
+git branch -r
+```
+Source: http://gitready.com/intermediate/2009/02/13/list-remote-branches.html
 
 ## Configuration
 
